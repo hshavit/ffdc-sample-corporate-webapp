@@ -13,7 +13,7 @@ async function bootstrap() {
 
   setupSession(app, 'Account Services');
 
-  const port = process.env.PORT || 3000;
+  const port = process.env.PORT || 3500;
   await app.listen(port, async () => {
     Logger.log(`Application is running on: ${await app.getUrl()}`);
   });

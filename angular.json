@@ -26,7 +26,9 @@
               "apps/client/src/assets",
               "apps/client/src/manifest.webmanifest"
             ],
-            "styles": ["apps/client/src/styles.scss"],
+            "styles": [
+              "apps/client/src/styles.scss"
+            ],
             "stylePreprocessorOptions": {
               "includePaths": [
                 "./themes/",
@@ -46,7 +48,7 @@
               ],
               "optimization": true,
               "outputHashing": "all",
-              "sourceMap": false,
+              "sourceMap": true,
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
@@ -127,6 +129,7 @@
           }
         },
         "serve": {
+          "defaultConfiguration": "development",
           "builder": "@nrwl/node:execute",
           "options": {
             "buildTarget": "server:build",

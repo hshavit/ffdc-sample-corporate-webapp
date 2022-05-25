@@ -4,4 +4,11 @@ import { Component } from '@angular/core';
   selector: 'ffdc-corporate-banking-sample-root',
   template: ` <router-outlet></router-outlet> `,
 })
-export class AppInitComponent {}
+export class AppInitComponent {
+
+  constructor(){
+    alert('ddd');
+    debugger
+  }
+
+}

@@ -14,7 +14,7 @@ import { environment } from '../../environments/environment';
 @NgModule({
   declarations: [AppInitComponent],
   imports: [
-    BrowserModule,
+   /*  BrowserModule, */
     AppInitRoutingModule,
     AuthModule,
     BrowserAnimationsModule,

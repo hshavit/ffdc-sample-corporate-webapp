@@ -48,7 +48,7 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  constructor(private corpAccountsGQL: CorporateAccountsGQLService) {}
+  constructor(private corpAccountsGQL: CorporateAccountsGQLService) {alert('fff');}
 
   ngOnInit() {
     if (window.innerWidth < 415) {
@@ -56,6 +56,7 @@ export class HomeComponent implements OnInit {
     }
 
     this.getAllAccounts().subscribe((data) => {
+      debugger
       this.accounts$.next(data);
       this.transactions$.next(
         [].concat(...data.map((account) => account.statement.items))
